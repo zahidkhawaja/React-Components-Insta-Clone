@@ -6,10 +6,8 @@ import "./Comment.css";
 
 const CommentSection = props => {
   const [data] = useState(props.comments);
-  console.log(data);
   return (
     <div>
-      {/* dummyData[0].comments */}
 
       {data.map(value => (
           <Comment comment = {value} />
