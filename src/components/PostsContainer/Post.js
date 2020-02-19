@@ -31,11 +31,14 @@ const Post = props => {
       </div>
       <LikeSection 
         incrementLikes = {incrementLikes} likes = {likes} 
-        />
+      />
       <CommentSection
         postId={props.post.imageUrl}
         comments={props.post.comments}
       />
+      <p id = "ago">
+    {props.post.longAgo}
+    </p>
     </div>
   );
 };
